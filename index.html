@@ -19,7 +19,7 @@
         <!-- 소셜 미디어에서 공유될 때 사용되는 URL -->
         <meta property="og:url" content="https://github.io/" />
         <!-- 소셜 미디어에서 페이지가 공유될 때 표시되는 이미지 -->
-        <meta property="og:image" content="images/metaimg.png" />
+        <meta property="og:image" content="https://gwanyoung0822.github.io/web_design/images/poster1.webp" />
         <!-- 소셜 미디어에서 페이지가 공유될 때 사용되는 설명 -->
         <meta property="og:description" content="GOMOVIE 웹사이트입니다." />
 
@@ -27,6 +27,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <!-- css 링크 -->
         <link rel="stylesheet" href="css/main.css">
+        <!-- js 링크 -->
+        <script src="js/jquery-1.12.3.js"></script>
+        <script src="js/script.js"></script>
     <title>GOMOVIE</title>
 </head>
 <body>
@@ -51,17 +54,17 @@
             </div>
         </header>
         <!-- 메뉴바, 검색아이콘 -->
-        <nav class="navi">
-            <div class="navi-inner">
-                <ul class="menu">
+        <nav class="menu">
+            <div class="menu-inner container">
+                <ul class="navi">
                     <li><a href="#">
                         영화
                         <ul class="submenu">
                             <li>
-                                전체영화
+                                <a href="#">전체영화</a>
                             </li>
                             <li>
-                                무비차트
+                                <a href="#">무비차트</a>
                             </li>
                         </ul>
                     </a></li>
@@ -69,10 +72,10 @@
                         예매
                         <ul class="submenu">
                             <li>
-                                빠른예매
+                                <a href="#">빠른예매</a>
                             </li>
                             <li>
-                                상영시간표
+                                <a href="#">상영시간표</a>
                             </li>
                         </ul>
                     </a></li>
@@ -80,10 +83,10 @@
                         극장
                         <ul class="submenu">
                             <li>
-                                GOMOVIE 극장
+                                <a href="#">GOMOVIE 극장</a>
                             </li>
                             <li>
-                                특별관
+                                <a href="#">특별관</a>
                             </li>
                         </ul>
                     </a></li>
@@ -91,16 +94,16 @@
                         스토어
                         <ul class="submenu">
                             <li>
-                                패키지
+                                <a href="#">패키지</a>
                             </li>
                             <li>
-                                영화관람권
+                                <a href="#">영화관람권</a>
                             </li>
                             <li>
-                                팝콘
+                                <a href="#">팝콘</a>
                             </li>
                             <li>
-                                굿즈
+                                <a href="#">굿즈</a>
                             </li>
                         </ul>
                     </a></li>
@@ -108,13 +111,13 @@
                         이벤트
                         <ul class="submenu">
                             <li>
-                                진행중 이벤트
+                                <a href="#">진행중 이벤트</a>
                             </li>
                             <li>
-                                지난 이벤트
+                                <a href="#">지난 이벤트</a>
                             </li>
                             <li>
-                                당첨자 발표
+                                <a href="#">당첨자 발표</a>
                             </li>
                         </ul>
                     </a></li>
@@ -122,15 +125,17 @@
                         혜택
                         <ul class="submenu">
                             <li>
-                                GOMOVIE 멤버십
+                                <a href="#">GOMOVIE 멤버십</a>
                             </li>
                             <li>
-                                제휴/할인
+                                <a href="#">제휴/할인</a>
                             </li>
                         </ul>
                     </a></li>
                 </ul>
-                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </a>
             </div>
         </nav>
         <!-- 메인 박스오피스 -->
@@ -146,7 +151,6 @@
                             <p>1.1k</p>
                             <button></button>
                         </div>
-                        span.
                     </div>
                 </div>
             </div>
