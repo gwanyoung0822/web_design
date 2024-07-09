@@ -12,14 +12,14 @@ $(document).ready(function(){
 })
 window.onload = function(){
 
-    var swiper = new Swiper(".mySwiper", {
+    var swiper = new Swiper(".bo-list", {
         loop: true,
-        spaceBetween: 10,
+        spaceBetween: 20,
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
       });
-      var swiper2 = new Swiper(".mySwiper2", {
+      var swiper2 = new Swiper(".bo-main", {
         loop: true,
         spaceBetween: 10,
         navigation: {

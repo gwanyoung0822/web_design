@@ -10,7 +10,11 @@ a{
     text-decoration: none;
     color: #333
 }
-
+h2{
+  text-align: center;
+  padding: 30px;
+  font-size: 25px;
+}
 /* 전체 */
 .wrap{
     width: 100%;
@@ -20,13 +24,14 @@ a{
     width: 100%;
     max-width: 1100px;
     margin: 0 auto;
+    padding: 0 20px;
     position: relative;
 }
 /* 상단 */
 .header{
     height: 80px;
     width: 100%;
-    background-color: rgba(0,0,0,0.9);
+    background-color: #111;
     position: fixed;
     top: 0;
     left: 0;
@@ -70,7 +75,7 @@ a{
 .menu{
     width: 100%;
     height: 50px;
-    background-color: rgba(0,0,0,0.9);
+    background-color: #111;
     position: fixed;
     left: 0;
     top: 80px;
@@ -84,6 +89,7 @@ a{
 }
 .navi{
     display: flex;
+    width: 80%;
 }
 .menu-inner > a > i{
     color: #fff;
@@ -105,12 +111,12 @@ text-align: center;
 /* 서브메뉴 */
 .submenu{
     position: relative;
-    background-color: rgba(0,0,0,0.5);
+    background-color: #111;
     z-index: 99;
     display: none;
 }
 .submenu > li > a{
-    font-size: 16px;
+    font-size: 15px;
     /* font-weight: bold; */
     color: #fff;
     line-height: 50px;
@@ -120,14 +126,14 @@ text-align: center;
 .bo{
     width: 100%;
     position: relative;
-    padding-top: 130px;
+    margin-top: 130px;
     /* background: url(../images/mainbg1.png)no-repeat center;
     background-size: contain; */
 }
 .bo::before{
     content: "";
-    width: 120%;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     background: url(../images/mainbg1.png)no-repeat center;
     background-size: cover;
     position: absolute;
@@ -140,11 +146,9 @@ text-align: center;
 }
 
 .bo-title{
-    text-align: center;
     color: #fff;
-    padding: 30px ;
-    font-size: 30px;
 }
+/* 스와이퍼 부분 */
 .swiper {
     width: 100%;
     height: 100%;
@@ -157,7 +161,7 @@ text-align: center;
     display: flex;
     justify-content: center;
     /* align-items: center; */
-    gap: 60px;
+    gap: 50px;
   }
 
   .swiper-slide img {
@@ -168,8 +172,6 @@ text-align: center;
   }
 
   .swiper {
-    width: 100%;
-    /* height: 300px; */
     margin-left: auto;
     margin-right: auto;
   }
@@ -179,42 +181,23 @@ text-align: center;
     background-position: center;
   }
 
-  .mySwiper2 {
+  .bo-main {
     /* height: 80%; */
     width: 100%;
-    
+    margin-bottom: 3%;
   }
-  .mySwiper2 .swiper-slide{
+  .bo-main .swiper-slide{
     width: 100%;
     height: 100%;
   }
-  .mySwiper2 .swiper-slide img{
+  .bo-main .swiper-slide img{
     width: 30%;
     height: 100%;
   }
-  .mySwiper {
-    height: 20%;
-    box-sizing: border-box;
-    padding: 10px 300px;
-  }
-
-  .mySwiper .swiper-slide {
-    width: 25%;
-    height: 100%;
-    opacity: 0.4;
-  }
-
-  .mySwiper .swiper-slide-thumb-active {
-    opacity: 1;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
   /* 박스오피스 영화 설명 */
+  .bo-txt{
+    width: 50%;
+  }
   .bo-txt h3{
     font-size: 40px;
     margin-bottom: 30px;
@@ -243,3 +226,68 @@ text-align: center;
     font-weight: bold;
     color: #fff;
   }
+  .bo-txt h4{
+    font-size: 25px;
+    padding: 20px 0;
+    color: #fff;
+  }
+  .bo-txt p{
+    color: #fff;
+    font-size: 15px;
+  }
+  /* 박스오피스 리스트 */
+  .bo-list {
+    height: 20%;
+    width: 40%;
+    box-sizing: border-box;
+    padding: 10px 0px 50px;
+    min-width: 424px;
+    
+  }
+
+  .bo-list .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .bo-list .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .bo-list .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  /* 이벤트 */
+  .event{
+    width: 100%;
+    position: relative;
+  }
+  .event-inner{
+    position: relative;
+  }
+.event-list{
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+.event-list li{
+  position: relative;
+  width: calc(100% / 3);
+}
+.event-list li a{
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.event-img{
+  width: 100%;
+  height: 200px;
+}
+.event-list li a img{
+  width: 100%;
+}

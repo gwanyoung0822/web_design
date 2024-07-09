@@ -1,0 +1,7 @@
+@charset "utf-8";
+@media screen and (max-width : 1092px) {
+    .bo-txt p{
+        height: 100px;
+        overflow-y: auto;
+    }
+}
