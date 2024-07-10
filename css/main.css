@@ -273,6 +273,7 @@ text-align: center;
   position: relative;
   width: 100%;
   display: flex;
+  gap: 30px;
 }
 .event-list li{
   position: relative;
