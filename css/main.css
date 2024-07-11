@@ -75,6 +75,13 @@ body{
 .user-list > li > a > i {
     font-size: 25px;
 } 
+.mb-menubt{
+  display: none;
+  padding: 20px 0;
+  font-size: 25px;
+  color: #fff;
+  text-align: end;
+}
 /* 메뉴 */
 .menu{
     width: 100%;
@@ -93,7 +100,7 @@ body{
 }
 .navi{
     display: flex;
-    width: 80%;
+    width: 81%;
 }
 .menu-inner > a > i{
     color: #fff;
@@ -102,7 +109,7 @@ body{
     padding-right: 10px;
 }
 .navi > li{
-width: 145px;
+width: 200px;
 text-align: center;
 /* background-color: #666; */
 }
@@ -153,10 +160,14 @@ text-align: center;
 .bo-title{
     color: #fff;
 }
-/* 스와이퍼 부분 */
+/* 스와이퍼 전체 부분 */
 .swiper {
     width: 100%;
     height: 100%;
+  }
+  .swiper {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .swiper-slide {
@@ -168,24 +179,17 @@ text-align: center;
     /* align-items: center; */
     gap: 50px;
   }
-
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
   .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-
-  .swiper {
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .swiper-slide {
-    background-size: cover;
-    background-position: center;
-  }
-
+  /* 박스오피스 메인 부분 */
   .bo-main {
     /* height: 80%; */
     width: 100%;
@@ -218,6 +222,7 @@ text-align: center;
 }
 .bo-txt ul li i{
     color: #E53939;
+    padding-right: 10px;
 }
   .bo-txt ul li button{
     width: 150px;
@@ -246,7 +251,7 @@ text-align: center;
     width: 50%;
     box-sizing: border-box;
     padding: 50px 0px;
-    min-width: 424px;
+    /* min-width: 424px; */
     
   }
 
@@ -540,7 +545,7 @@ text-align: center;
   width: 100%;
   height: 100%;
   text-align: center;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;

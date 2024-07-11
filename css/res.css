@@ -2,6 +2,100 @@
 @media screen and (max-width : 1092px) {
     .bo-txt p{
         height: 100px;
+        height: 200px;
         overflow-y: auto;
     }
 }
+
+@media screen and (max-width : 1000px) {
+    .event-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .event-bt{
+        top: 102%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+@media screen and (max-width : 850px){
+    .store-list{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .store-bt{
+        top: 102%;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+@media screen and (max-width : 768px){
+    /* 유저 메뉴 숨김 */
+    .user-list{
+        display: none;
+    }
+    .mb-menubt{
+        display: block;
+    }
+    /* 메뉴바 숨김 */
+    .menu{
+        display: none;
+    }
+
+    /* 스와이퍼 */
+    .bo{
+        margin-top: 80px;
+    }
+    .swiper-slide{
+        flex-direction: column;
+        align-items: center;
+    }
+    .bo-main .swiper-slide img{
+        width: 70%;
+    }
+    .bo-list{
+        width: 70%;
+    }
+    .bo-txt{
+        width: 70%;
+    }
+    .bo-txt p{
+        height: 300px;
+    }
+    .bo-txt ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* 큐레이션 */
+    .cu-main{
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .cu-main-img{
+        width: 60%;
+    }
+    .cu-info{
+        width: 60%;
+    }
+    /* cs영역 */
+    .cs-list li{
+        width: 90px;
+        height: 90px;
+    }
+    .cs-list li a i{
+        font-size: 35px;
+      }
+      .cs-list li a p{
+        font-size: 13px;
+        font-weight: 700;
+      }
+    /* 하단 아이콘 */
+    .ft-inner-down{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+@media screen and (max-width : 520px)

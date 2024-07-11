@@ -15,10 +15,22 @@ window.onload = function(){
     var swiper = new Swiper(".bo-list", {
         loop: true,
         spaceBetween: 20,
-        slidesPerView: 4,
+        // slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints:{
+          320:{
+            slidesPerView : 2
+          },
+          521:{
+            slidesPerView : 3
+          },
+          769:{
+            slidesPerView : 4
+        },
+        }
       });
+
       var swiper2 = new Swiper(".bo-main", {
         loop: true,
         spaceBetween: 10,
