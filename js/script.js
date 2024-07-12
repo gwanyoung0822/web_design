@@ -15,12 +15,12 @@ window.onload = function(){
     var swiper = new Swiper(".bo-list", {
         loop: true,
         spaceBetween: 20,
-        // slidesPerView: 4,
+        slidesPerView: 1.5,
         freeMode: true,
         watchSlidesProgress: true,
         breakpoints:{
           320:{
-            slidesPerView : 2
+            slidesPerView : 1.5
           },
           521:{
             slidesPerView : 3
@@ -40,6 +40,26 @@ window.onload = function(){
         },
         thumbs: {
           swiper: swiper,
+        },
+      });
+      var swiper = new Swiper(".cu-Swiper", {
+        slidesPerView: 1.5,
+        spaceBetween: 30,
+        freeMode: true,
+        breakpoints:{
+          321:{
+            slidesPerView : 2.5
+          },
+          521:{
+            slidesPerView : 3
+          },
+          769:{
+            slidesPerView : 3
+          }
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
         },
       });
 }
