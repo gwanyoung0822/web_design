@@ -20,7 +20,7 @@ window.onload = function(){
         watchSlidesProgress: true,
         breakpoints:{
           320:{
-            slidesPerView : 1.5
+            slidesPerView : 2
           },
           521:{
             slidesPerView : 3
