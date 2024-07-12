@@ -18,8 +18,26 @@
         right: 50%;
         transform: translateX(50%);
     }
+    .event-bt a{
+        padding: 7px 25px;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+    }
+    .event{
+        padding: 20px 0 100px;
+    }
+    .event-title{
+        padding: 0 0 20px;
+    }
 }
 @media screen and (max-width : 850px){
+    .store{
+        padding: 20px 0 100px;
+    }
+    .store-title{
+        padding: 0 0 20px;
+    }
     .store-list{
         flex-direction: column;
         align-items: center;
@@ -29,6 +47,12 @@
         top: 102%;
         right: 50%;
         transform: translateX(50%);
+    }
+    .store-bt a{
+        padding: 7px 25px;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
     }
 }
 @media screen and (max-width : 768px){
@@ -48,6 +72,9 @@
     .bo{
         margin-top: 80px;
     }
+    .bo-title{
+        padding: 20px 0 20px; 
+    }
     .bo .swiper-slide{
         flex-direction: column;
         align-items: center;
@@ -61,6 +88,14 @@
     .bo-txt{
         width: 70%;
     }
+    .bo-txt h4{
+        overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
+    }
+    .bo-txt h4 br{
+        display: none;
+    }
     .bo-txt p{
         height: 300px;
     }
@@ -69,6 +104,12 @@
         justify-content: space-between;
     }
     /* 큐레이션 */
+    .curation{
+        padding: 20px 0 40px;
+    }
+    .cu-title{
+        padding: 0 0 20px;
+    }
     .cu-main{
         flex-direction: column;
         align-items: center;
@@ -102,9 +143,18 @@
     .bo .swiper-slide{
         gap: 20px;
     }
+    .bo .swiper-button-next{
+        transform: scale(0.6);
+    }
+    .bo .swiper-button-prev{
+        transform: scale(0.6);
+    }
     .bo-txt h3{
         margin-bottom: 10px;
         font-size: 35px;
+        overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
     }
     .bo-txt ul li{
         font-size: 24px;
@@ -119,9 +169,13 @@
     .bo-txt h4{
         padding: 10px 0;
         font-size: 20px;
+        overflow:hidden;
+      text-overflow:ellipsis;
+      white-space:nowrap;
     }
     .bo-txt p{
         font-size: 14px;
+        display: none;
     }
     /* 큐레이션 */
     .cu-br{
@@ -139,6 +193,12 @@
     }
     .cu-text > p{
         font-size: 16px;
+    }
+    .cu-txt{
+        display: none;
+    }
+    .cu-text span{
+        display: none;
     }
     /* cs */
     .cs-list{
