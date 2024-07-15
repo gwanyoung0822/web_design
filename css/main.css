@@ -132,7 +132,49 @@ text-align: center;
     color: #fff;
     line-height: 50px;
 }
-
+/* 햄버거바 클릭시 나오는 메뉴 */
+.mb-menu{
+  width: 100%;
+  position: absolute;
+  top: 80px;
+  background-color: rgba(0,0,0,0.9);
+  padding: 5% 10%;
+  display: none;
+}
+.mb-menu.showMbMenu{
+  display: block;
+}
+.mb-menu-list{
+  font-size: 25px;
+}
+.mb-menu-list > li{
+  padding: 10px;
+}
+.mb-menu-list > li >a{
+  color: #fff;
+}
+.mb-submenu{
+  padding-left: 20px;
+  font-size: 20px;
+  display: none;
+}
+.mb-submenu >li{
+  padding-top: 10px;
+  
+}
+.mb-submenu >li >a{
+  color: #999;
+}
+.mb-login-list{
+  display: flex;
+  gap: 5%;
+  justify-content: flex-end;
+  font-size: 18px;
+  padding-top: 20px;
+}
+.mb-login-list>li>a{
+  color: #fff;
+}
 /* 박스오피스 스와이퍼 */
 .bo{
     width: 100%;
@@ -626,9 +668,3 @@ text-align: center;
   color: #666;
 }
 
-
-/* 타이틀 패딩 줄이기
-전체보기 버튼 모바일에서 키우기
-박스오피스 설명 없애기
-스와이프 네비게이션 크기 줄이가
- */

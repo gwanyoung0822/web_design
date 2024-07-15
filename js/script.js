@@ -7,6 +7,11 @@ $(document).ready(function(){
         .mouseout(function(){
             $(this).find(".submenu").stop().slideUp()
         })
+    //모바일 메뉴 슬라이드다운,업
+    $(".mb-menu-list > li").click(function(){
+        $(this).find(".mb-submenu").stop().slideToggle()
+    })
+
 
         
 })
@@ -33,6 +38,10 @@ window.onload = function(){
 
       var swiper2 = new Swiper(".bo-main", {
         loop: true,
+        autoplay: {
+          delay: 10000,
+          disableOnInteraction: false,
+        },
         spaceBetween: 10,
         navigation: {
           nextEl: ".swiper-button-next",
@@ -62,4 +71,10 @@ window.onload = function(){
           clickable: true,
         },
       });
+      // 햄버거바 클릭시 메뉴창 
+      const mbMenuBt = document.querySelector(".mb-menubt")
+      const mbMenu = document.querySelector(".mb-menu")
+      mbMenuBt.addEventListener("click", function(){
+        mbMenu.classList.toggle("showMbMenu")
+      })
 }

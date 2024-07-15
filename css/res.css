@@ -55,6 +55,11 @@
         font-size: 18px;
     }
 }
+@media screen and (min-width : 769px){  
+    .mb-menu.showMbMenu{
+        display: none;
+    }
+}
 @media screen and (max-width : 768px){
     /* 유저 메뉴 숨김 */
     .user-list{
