@@ -19,6 +19,110 @@ h2{
 body{
   font-family: "Noto Sans KR", sans-serif;;
 }
+/* 모달창 로그인창 */
+.modal{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+}
+.modal-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+/* 모달창 상단 */
+.modal-top{
+  width: 100%;
+  height: 50px;
+  background-color: #E53939;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.modal-top span{
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.modal-top a i{
+  font-size: 20px;
+  color: #fff;
+}
+/* 모달 메인 */
+.modal-main{
+  padding: 30px;
+}
+.modal-main-top{
+  width: 100%;
+}
+.modal-main-top ul{
+}
+.modal-main-top li{
+  margin-bottom: 10px;
+}
+.modal-main-top li input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+.login{
+  margin-top: 10px;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #E53939;
+}
+.login a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.modal-main-bottom{
+  padding: 10px;
+}
+.modal-main-bottom ul{
+  display: flex;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+/* 탑 버튼 */
+.top-button{
+  position: fixed;
+  bottom: 60px;
+  right: 30px;
+  z-index: 999;
+}
+.top-bt{
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: #111;
+  border-radius: 50%;
+  box-shadow: 0px 3px 7px 0 rgb(0, 0, 0, 0.3);
+}
+.top-bt i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  color: #fff;
+}
 /* 전체 */
 .wrap{
     width: 100%;

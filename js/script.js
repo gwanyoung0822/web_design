@@ -77,4 +77,18 @@ window.onload = function(){
       mbMenuBt.addEventListener("click", function(){
         mbMenu.classList.toggle("showMbMenu")
       })
+      // 탑버튼 스크롤 기능
+      const topBt = document.getElementById("top-bt")
+      topBt.addEventListener("click", function(event){
+        event.preventDefault()
+        window.scrollTo({
+          top:0,
+          behavior:"smooth"
+        })
+      })
+      // 모달창
+      const loginOpen = document.querySelector(".login-open")
+
+
+      // 로그인 팝업창 오픈 코드 
 }

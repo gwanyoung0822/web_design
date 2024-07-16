@@ -46,6 +46,45 @@
     <title>GOMOVIE</title>
 </head>
 <body>
+    <!-- 모달창 -->
+    <div class="modal">
+        <div class="modal-wrap">
+            <div class="modal-top">
+                <span>로그인</span>
+                <a href="#">
+                    <i class="fa-solid fa-xmark"></i>
+                </a>
+            </div>
+            <div class="modal-main">
+                <form class="modal-main-top">
+                    <ul>
+                        <li>
+                            <input type="text" name="id" id="id" placeholder="아이디">
+                        </li>
+                        <li>
+                            <input type="text" name="pw" id="pw" placeholder="비밀번호">
+                        </li>
+                    </ul>
+                    <label><input type="checkbox" name="idSave" id="idSave"> 아이디 저장</label>
+                    <button class="login"><a href="#">로그인</a></button>
+                </form>
+                <div class="modal-main-bottom">
+                    <ul>
+                        <li><a href="#">ID 찾기</a></li>
+                        <li><a href="#">PW 찾기</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 탑 이동 버튼 -->
+    <div class="top-button">
+        <a href="#" class="top-bt" id="top-bt">
+            <i class="fa-solid fa-angle-up"></i>
+        </a>
+    </div>
+    <!-- 전체 영역 -->
     <div class="wrap">
         <!-- 상단 로고, 로그인 -->
         <header class="header">
@@ -54,7 +93,7 @@
                     <h1 class="logo">GOMOVIE</h1>
                 </a>
                 <ul class="user-list">
-                    <li><a href="#">
+                    <li><a href="#" class="login-open">
                         로그인
                     </a></li>
                     <li><a href="#">
@@ -141,7 +180,7 @@
                     </a></li>
                 </ul>
                 <ul class="mb-login-list">
-                    <li><a href="#">로그인</a></li>
+                    <li><a href="#" class="login-open">로그인</a></li>
                     <li><a href="#">회원가입</a></li>
                 </ul>
             </div>
