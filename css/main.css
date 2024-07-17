@@ -30,6 +30,9 @@ body{
     z-index: 9999;
     display: none;
 }
+.modal.active{
+  display: block;
+}
 .modal-wrap{
   position: absolute;
   top: 50%;

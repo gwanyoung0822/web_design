@@ -88,7 +88,13 @@ window.onload = function(){
       })
       // 모달창
       const loginOpen = document.querySelector(".login-open")
-
-
+      const loginPopup = document.querySelector(".modal")
+      const loginClose = document.querySelector(".close")
+      loginOpen.addEventListener("click",function(){
+        loginPopup.classList.add("active")
+      })
+      loginClose.addEventListener("click",function(){
+        loginPopup.classList.remove("active")
+      })
       // 로그인 팝업창 오픈 코드 
 }
