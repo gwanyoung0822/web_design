@@ -118,4 +118,17 @@ window.onload = function(){
         alert(`로그인이 되었습니다`)
         mbLoginPopup.classList.remove("active")
       })
+       // 모든 a 태그를 선택
+       var anchors = document.querySelectorAll("a");
+
+       // 각 a 태그에 대해 클릭 이벤트 리스너를 추가
+       anchors.forEach(function(anchor) {
+           anchor.addEventListener("click", function(event) {
+               // href 속성이 '#'인지 확인
+               if (anchor.getAttribute("href") === "#") {
+                   // 기본 동작을 막음
+                   event.preventDefault();
+               }
+           });
+       });
 }
