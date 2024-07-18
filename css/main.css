@@ -103,6 +103,90 @@ body{
   width: 100%;
   justify-content: center;
 }
+/* 모바일 로그인 팝업창 */
+.mb-popup{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.7);
+    z-index: 9999;
+    display: none;
+}
+.mb-popup.active{
+  display: block;
+}
+.mb-popup-wrap{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 350px;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mb-popup-top{
+  width: 100%;
+  height: 40px;
+  background-color: #E53939;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.mb-popup-top span{
+  font-size: 18px;
+  /* font-weight: bold; */
+  color: #fff;
+}
+.mb-popup-top a i{
+  font-size: 20px;
+  color: #fff;
+}
+/* 모바일 로그인 팝업창 메인 */
+.mb-popup-main{
+  padding: 20px;
+}
+.mb-popup-main-top{
+  width: 100%;
+}
+.mb-popup-main-top ul{
+}
+.mb-popup-main-top li{
+  margin-bottom: 10px;
+}
+.mb-popup-main-top li input{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+.mb-login{
+  margin-top: 10px;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 40px;
+  background-color: #E53939;
+}
+.mb-login a{
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+}
+.mb-popup-main-bottom{
+  padding: 10px;
+}
+.mb-popup-main-bottom ul{
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+}
 /* 탑 버튼 */
 .top-button{
   position: fixed;

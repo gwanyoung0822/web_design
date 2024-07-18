@@ -47,6 +47,7 @@
 </head>
 <body>
     <!-- 모달창 -->
+    <!-- 로그인 팝업창 -->
     <div class="modal">
         <div class="modal-wrap">
             <div class="modal-top">
@@ -69,6 +70,38 @@
                     <button class="login"><a href="#">로그인</a></button>
                 </form>
                 <div class="modal-main-bottom">
+                    <ul>
+                        <li><a href="#">ID 찾기</a></li>
+                        <li><a href="#">PW 찾기</a></li>
+                        <li><a href="#">회원가입</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 모바일 로그인 팝업창 -->
+    <div class="mb-popup">
+        <div class="mb-popup-wrap">
+            <div class="mb-popup-top">
+                <span>로그인</span>
+                <a href="#">
+                    <i class="fa-solid fa-xmark mb-close"></i>
+                </a>
+            </div>
+            <div class="mb-popup-main">
+                <form class="mb-popup-main-top">
+                    <ul>
+                        <li>
+                            <input type="text" name="mb-id" id="mb-id" placeholder="아이디">
+                        </li>
+                        <li>
+                            <input type="text" name="mb-pw" id="mb-pw" placeholder="비밀번호">
+                        </li>
+                    </ul>
+                    <label><input type="checkbox" name="mb-idSave" id="mb-idSave"> 아이디 저장</label>
+                    <button class="mb-login"><a href="#">로그인</a></button>
+                </form>
+                <div class="mb-popup-main-bottom">
                     <ul>
                         <li><a href="#">ID 찾기</a></li>
                         <li><a href="#">PW 찾기</a></li>

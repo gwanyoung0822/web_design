@@ -87,6 +87,7 @@ window.onload = function(){
         })
       })
       // 모달창
+      // 로그인 팝업창 오픈 코드 
       const loginOpen = document.querySelector(".login-open")
       const loginPopup = document.querySelector(".modal")
       const loginClose = document.querySelector(".close")
@@ -96,5 +97,25 @@ window.onload = function(){
       loginClose.addEventListener("click",function(){
         loginPopup.classList.remove("active")
       })
-      // 로그인 팝업창 오픈 코드 
+      // 로그인 버튼 클릭시 확인버튼 나온후 팝업창 닫기
+      const loginBt = document.querySelector(".login")
+      loginBt.addEventListener("click",function(){
+        alert(`로그인이 되었습니다`)
+        loginPopup.classList.remove("active")
+      })
+      // 모바일 로그인 팝업창오픈
+      const mbLoginOpen = document.querySelector(".mb-login-open")
+      const mbLoginPopup = document.querySelector(".mb-popup")
+      const mbLoginClose = document.querySelector(".mb-close")
+      mbLoginOpen.addEventListener("click",function(){
+        mbLoginPopup.classList.add("active")
+      })
+      mbLoginClose.addEventListener("click",function(){
+        mbLoginPopup.classList.remove("active")
+      })
+      const mbLoginBt = document.querySelector(".mb-login")
+      mbLoginBt.addEventListener("click",function(){
+        alert(`로그인이 되었습니다`)
+        mbLoginPopup.classList.remove("active")
+      })
 }
